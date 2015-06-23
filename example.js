@@ -23,8 +23,6 @@ client.push({
     value: 322
 });
 
-client['push']();
-
 client.insertAll([
     {
         key: 'js.prices.gas',
