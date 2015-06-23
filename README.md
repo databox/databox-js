@@ -15,6 +15,7 @@ var client = new Databox({
     push_token: '<my token>'
 });
 
+// Push one KPI
 client.push({
     key: 'js.prices.gas',
     value: 322,
@@ -22,6 +23,34 @@ client.push({
 }, function(result){
     console.log(result);
 });
+
+// Push multiple KPIs
+client.insertAll([
+    {
+        key: 'js.prices.gas',
+        value: 322
+    },
+    {
+        key: 'js.prices.gas',
+        value: 100,
+        date: '2015-06-23 09:00:00'
+    }
+], function(result){
+    console.log(result);
+});
+
+// Callback is optional
+client.insertAll([
+    {
+        key: 'js.prices.gas',
+        value: 322
+    },
+    {
+        key: 'js.prices.gas',
+        value: 100,
+        date: '2015-06-23 09:00:00'
+    }
+]);
 
 // Get last push
 client.lastPush(function (pushes) {
