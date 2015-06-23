@@ -7,7 +7,7 @@
     "email": "otobrglez@gmail.com"
   },
   "scripts": {
-  	"test": "node_modules/.bin/nodeunit --reporter default"
+  	"test": "nodeunit --reporter default"
 	},
   "readmeFilename": "README.md",
   "devDependencies": {
