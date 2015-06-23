@@ -64,6 +64,11 @@ client.lastPushes(10, function (pushes) {
 
 ```
 
+## Development
+
+    git clone ...
+    npm test
+
 ## Author & Licence
 - [Oto Brglez](https://github.com/otobrglez)
 
