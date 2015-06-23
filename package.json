@@ -7,11 +7,11 @@
     "email": "otobrglez@gmail.com"
   },
   "scripts": {
-  	"test": "node ./test/*.js"
+  	"test": "node_modules/.bin/nodeunit --reporter default"
 	},
   "readmeFilename": "README.md",
-  "dependencies": {
-
+  "devDependencies": {
+    "nodeunit": "0.2"
   },
   "repository": {
     "type": "git",
