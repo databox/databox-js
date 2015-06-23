@@ -7,11 +7,13 @@
     "email": "otobrglez@gmail.com"
   },
   "scripts": {
-  	"test": "mocha"
-	},
+    "test": "mocha",
+    "pretest": "jshint lib test *.js"
+  },
   "readmeFilename": "README.md",
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "jshint": "*"
   },
   "repository": {
     "type": "git",
