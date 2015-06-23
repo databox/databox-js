@@ -1,0 +1,24 @@
+{
+  "name": "databox-js",
+  "version": "0.2.0",
+  "description": "Node.js bindings bindings for Databox",
+  "author": {
+    "name": "Oto Brglez",
+    "email": "otobrglez@gmail.com"
+  },
+  "scripts": {
+  	"test": "node ./test/*.js"
+	},
+  "readmeFilename": "README.md",
+  "dependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/databox/databox-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/databox/databox-js/issues"
+  },
+  "main": "./lib/databox"
+}
