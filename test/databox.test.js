@@ -1,21 +1,17 @@
 var path = require('path');
-// var test = require('testunit');
 var assert = require('assert');
 
 var Databox = require(path.join('../lib/', 'databox.js'));
 
-module.exports = {
-    setUp: function (cb) {
-        cb();
-    },
+describe('Databox', function () {
+    describe('Setup', function () {
+        it('Should set push_token', function () {
+            var push_token = 123;
+            var d = new Databox({
+                'push_token': push_token
+            });
 
-    testSetup: function (test) {
-        var push_token = 123;
-        var d = new Databox({
-            'push_token': push_token
+            assert.equal(d.push_token, push_token);
         });
-
-        test.ok(d.push_token == push_token, "Token must be set");
-        test.done();
-    }
-}
+    });
+});

@@ -7,11 +7,11 @@
     "email": "otobrglez@gmail.com"
   },
   "scripts": {
-  	"test": "nodeunit --reporter default"
+  	"test": "mocha"
 	},
   "readmeFilename": "README.md",
   "devDependencies": {
-    "nodeunit": "0.2"
+    "mocha": "*"
   },
   "repository": {
     "type": "git",
