@@ -1,5 +1,5 @@
 {
-  "name": "databox-js",
+  "name": "databox",
   "version": "0.2.0",
   "description": "Node.js bindings bindings for Databox",
   "author": {
