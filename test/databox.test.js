@@ -68,6 +68,27 @@ describe('Databox', function () {
             });
         });
 
+        it('Should push KPI w/ #push and additional attributes', function (done) {
+            var key = 'test';
+            var value = 300;
+
+            Databox.prototype._pushJSONRequest = function (options, data, cb) {
+                var i_value = data[0][util.format('$%s', key)];
+                assert.equal(i_value, value);
+                assert.equal(data[0].me, 'Oto');
+                done();
+            };
+
+            databox.push({
+                key: key,
+                value: value,
+                attributes: {
+                    'me': 'Oto'
+                }
+            });
+
+        });
+
         it('Should push KPI w/ #push & callback', function (done) {
             var key = 'me.key';
             var value = 299;

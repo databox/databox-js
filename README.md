@@ -33,7 +33,18 @@ client.insertAll([
     {
         key: 'js.prices.gas',
         value: 100,
+        
+        // With date
         date: '2015-06-23 09:00:00'
+    },
+    {
+        key: 'js.prices.gas',
+        value: 200,
+        
+        // With additional attributes
+        attributes: {
+            'station': 'ny-main'
+        }
     }
 ], function(result){
     console.log(result);
@@ -68,6 +79,11 @@ client.lastPushes(10, function (pushes) {
 
     git clone ...
     npm test
+    
+## Debugging
+
+    # Add "debugger" keyword anywhere and run
+    mocha debug test
 
 ## Author & Licence
 - [Oto Brglez](https://github.com/otobrglez)
