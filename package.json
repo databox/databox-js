@@ -1,6 +1,6 @@
 {
   "name": "databox",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Node.js bindings for Databox - Mobile Executive Dashboard.",
   "author": {
     "name": "Oto Brglez",
