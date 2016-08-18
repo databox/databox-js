@@ -19,6 +19,15 @@ client.push({
   value: 322
 });
 
+client.push({
+  key: 'js.prices.test.gas',
+  value: 124,
+  unit: 'USD',
+  attributes: {
+    'station': 'omv'
+  }
+});
+
 client.insertAll([
   {
     key: 'js.prices.gas',
@@ -34,7 +43,30 @@ client.insertAll([
 });
 
 client.lastPush(function (pushes) {
-  console.log("Last push was:");
-  console.log(JSON.stringify(pushes, null, 2));
+  var sha = pushes[0].response.body.id;
+
+  console.log('Last push id: ' + sha);
+  client.getPush(sha, function (onePush) {
+    console.log('#getPush response:', JSON.stringify(onePush, null, 2));
+  });
 });
 
+client.lastPushes(2, function (pushes) {
+  var sha = [];
+  for (var i in pushes) {
+    sha.push(pushes[i].response.body.id);
+  }
+
+  console.log('Last two pushes:', sha);
+  client.getPush(sha, function (multiplePushes) {
+    console.log('#getPush response:', JSON.stringify(multiplePushes, null, 2));
+  });
+});
+
+client.metrics(function (res) {
+  console.log('#metrics response', JSON.stringify(res, null, 2));
+});
+
+client.purge(function (res) {
+  console.log('#purge response', JSON.stringify(res, null, 2));
+});

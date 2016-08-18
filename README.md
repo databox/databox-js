@@ -46,6 +46,13 @@ client.insertAll([
         attributes: {
             'station': 'ny-main'
         }
+    },
+    {
+        key: 'js.prices.gas',
+        value: 200,
+
+        // With additional currency unit
+        unit: 'USD'
     }
 ], function(result){
     console.log(result);
@@ -71,6 +78,12 @@ client.lastPush(function (pushes) {
 
 // Retrieve several pushes
 client.lastPushes(10, function (pushes) {
+    console.log(pushes);
+});
+
+// Retrieve specific push
+var id = '14714784007cb9cd36cf46baefcd0a';
+client.getPush(id, function (pushes) {
     console.log(pushes);
 });
 

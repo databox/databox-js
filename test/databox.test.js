@@ -35,12 +35,16 @@ describe('Databox', function () {
       config = databox.config;
     });
 
-    it('Should have user_agent', function () {
-      assert(config.user_agent.match(/\d+\.\d+\.\d+/i) !== null);
+    it('Should have valid user_agent', function () {
+      assert(config.user_agent.match(/^databox\-js\/\d+\.\d+\.\d+/i) !== null);
     });
 
     it('Should have push_host', function () {
       assert(config.push_host.match(/databox/) !== null);
+    });
+
+    it('Should have valid accept', function () {
+      assert(config.accept.match(/^application\/vnd\.databox\.v\d\+json/) !== null);
     });
   });
 
