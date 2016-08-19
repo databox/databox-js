@@ -87,6 +87,16 @@ client.getPush(id, function (pushes) {
     console.log(pushes);
 });
 
+// Retrieve pushed metric keys
+client.metrics(function (metrics) {
+    console.log(metrics);
+});
+
+// Purge pushed data
+client.purge(function (response) {
+    console.log(response);
+});
+
 ```
 
 ## Development
