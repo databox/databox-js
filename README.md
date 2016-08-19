@@ -111,5 +111,6 @@ client.purge(function (response) {
 
 ## Author & Licence
 - [Oto Brglez](https://github.com/otobrglez)
+- [Vlada Petrovic](https://github.com/vladapetrovic)
 
 Comes with [MIT](LICENSE).
