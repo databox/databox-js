@@ -87,6 +87,16 @@ client.getPush(id, function (pushes) {
     console.log(pushes);
 });
 
+// Retrieve pushed metric keys
+client.metrics(function (metrics) {
+    console.log(metrics);
+});
+
+// Purge pushed data
+client.purge(function (response) {
+    console.log(response);
+});
+
 ```
 
 ## Development
@@ -101,5 +111,6 @@ client.getPush(id, function (pushes) {
 
 ## Author & Licence
 - [Oto Brglez](https://github.com/otobrglez)
+- [Vlada Petrovic](https://github.com/vladapetrovic)
 
 Comes with [MIT](LICENSE).
