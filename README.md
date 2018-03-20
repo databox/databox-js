@@ -20,7 +20,7 @@ var client = new Databox({
 client.push({
     key: 'js.prices.gas',
     value: 322,
-    date: '2015-23-06 09:00:00'
+    date: '2018-02-23 09:00:00'
 }, function(result){
     console.log(result);
 });
@@ -36,7 +36,7 @@ client.insertAll([
         value: 100,
 
         // With date
-        date: '2015-06-23 09:00:00'
+        date: '2018-02-23 09:00:00'
     },
     {
         key: 'js.prices.gas',
@@ -67,7 +67,7 @@ client.insertAll([
     {
         key: 'js.prices.gas',
         value: 100,
-        date: '2015-06-23 09:00:00'
+        date: '2018-02-23 09:00:00'
     }
 ]);
 
