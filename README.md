@@ -1,6 +1,7 @@
 # databox-js
 
-[![Build Status](https://travis-ci.org/databox/databox-js.svg)](https://travis-ci.org/databox/databox-js)
+![seanforyou23](https://circleci.com/gh/seanforyou23/databox-js.svg?style=shield)
+
 [![npm version](https://badge.fury.io/js/databox.svg)](https://badge.fury.io/js/databox)
 
 ## Installation
