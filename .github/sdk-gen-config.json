@@ -1,0 +1,10 @@
+{
+  "library": "javascript",
+  "projectName": "databox",
+  "licenseName": "MIT",
+  "projectVersion": "{VERSION}",
+  "projectDescription": "SDK Client for using Databox Push API feature",
+  "apiPackage": "databox",
+  "invokerPackage": "databox",
+  "emitModelMethods": true
+}
