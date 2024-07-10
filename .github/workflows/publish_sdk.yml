@@ -4,9 +4,7 @@ on:
     branches:
       - master
     paths:
-      - 'src2/**'
-env:
-  CODE_DIR: src2
+      - 'src/**'
 jobs:
   release_draft:
     name: Create release draft
