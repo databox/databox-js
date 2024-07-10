@@ -17,7 +17,7 @@ import PushDataAttribute from './PushDataAttribute';
 /**
  * The PushData model module.
  * @module databox/model/PushData
- * @version 2.1.1
+ * @version 2.2.0
  */
 class PushData {
     /**
