@@ -29,28 +29,24 @@ jobs:
     needs: release_draft
     timeout-minutes: 15
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-  
-    - name: Setup Maven Action
-      uses: s4u/setup-maven-action@v1.14.0
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: "./src/package-lock.json"
+          registry-url: https://npm.pkg.github.com/
 
-    - name: Configure Maven
-      uses: s4u/maven-settings-action@v3.0.0
-      with:
-        servers: |
-          [{
-            "id": "github",
-            "username": "${{ github.actor }}",
-            "password": "${{ secrets.PACKAGES_PUBLISH_TOKEN }}"
-          }]
-        path: ${{ github.workspace }}/.m2/settings.xml
-                            
-    - name: Publish SDK
-      run: mvn --batch-mode -DuseGitHubPackages=true deploy -s .m2/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.PACKAGES_PUBLISH_TOKEN }}
-        GITHUB_USERNAME: ${{ github.actor }}
+      - name: Install packages
+        run: npm ci
+      - name: Build package
+        run: npm run build
+      - name: Publish package
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   release_publish:
     name: Publish release
