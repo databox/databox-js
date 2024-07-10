@@ -49,7 +49,7 @@ import DefaultApi from './databox/DefaultApi';
 * </pre>
 * </p>
 * @module databox/index
-* @version 2.1.1
+* @version 2.2.0
 */
 export {
     /**

@@ -18,7 +18,7 @@ import PushData from '../model/PushData';
 /**
 * Default service.
 * @module databox/databox/DefaultApi
-* @version 2.1.1
+* @version 2.2.0
 */
 export default class DefaultApi {
 

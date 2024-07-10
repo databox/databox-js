@@ -1,6 +1,6 @@
 {
   "name": "databox",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "SDK Client for using Databox Push API feature",
   "license": "MIT",
   "main": "dist/databox/index.js",

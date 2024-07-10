@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PushDataAttribute model module.
  * @module databox/model/PushDataAttribute
- * @version 2.1.1
+ * @version 2.2.0
  */
 class PushDataAttribute {
     /**
