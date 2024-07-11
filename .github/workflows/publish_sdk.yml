@@ -40,7 +40,7 @@ jobs:
 
       - name: Install packages
         run: |
-          npm ci
+          npm install
         working-directory: ./src
 
       - name: Build package
