@@ -2,7 +2,7 @@
 
 This generator creates TypeScript/JavaScript client that utilizes [RxJS](https://rxjs-dev.firebaseapp.com/). The generated Node module can be used in the following environments:
 
-Environment 
+Environment
 * Node.js
 * Webpack
 * Browserify
