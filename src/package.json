@@ -1,46 +1,22 @@
 {
   "name": "databox",
-  "version": "2.2.0",
-  "description": "SDK Client for using Databox Push API feature",
-  "license": "MIT",
-  "main": "dist/databox/index.js",
-  "scripts": {
-    "build": "babel src -d dist",
-    "prepare": "npm run build",
-    "test": "mocha --require @babel/register --recursive"
+  "version": "0.4.0",
+  "description": "OpenAPI client for databox",
+  "author": "OpenAPI-Generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
   },
-  "browser": {
-    "fs": false
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts" : {
+    "build": "node_modules/.bin/tsc --outDir dist/",
+    "prepare": "npm run build"
   },
   "dependencies": {
-    "@babel/cli": "^7.0.0",
-    "superagent": "^5.3.0"
+    "rxjs": "^7.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
-    "@babel/plugin-proposal-do-expressions": "^7.0.0",
-    "@babel/plugin-proposal-export-default-from": "^7.0.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
-    "@babel/plugin-proposal-function-bind": "^7.0.0",
-    "@babel/plugin-proposal-function-sent": "^7.0.0",
-    "@babel/plugin-proposal-json-strings": "^7.0.0",
-    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
-    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-syntax-import-meta": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "expect.js": "^0.3.1",
-    "mocha": "^8.0.1",
-    "sinon": "^7.2.0"
-  },
-  "files": [
-    "dist"
-  ]
+    "typescript": "^4.0 || ^5.0"
+  }
 }
