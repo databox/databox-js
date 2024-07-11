@@ -1,6 +1,6 @@
 {
   "name": "databox",
-  "version": "0.4.0",
+  "version": "2.1.1",
   "description": "OpenAPI client for databox",
   "author": "OpenAPI-Generator",
   "repository": {
