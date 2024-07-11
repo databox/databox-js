@@ -4,7 +4,7 @@ This generator creates TypeScript/JavaScript client that utilizes [RxJS](https:/
 
 Environment
 * Node.js
-* Webpack
+* Webpack 
 * Browserify
 
 Language level
