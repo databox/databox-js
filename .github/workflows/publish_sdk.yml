@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -39,7 +39,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: Install packages
-        run: npm ci
+        run: |
+          npm install --package-lock-only
+          npm ci
         working-directory: ./src
 
       - name: Build package
