@@ -40,8 +40,6 @@ jobs:
 
       - name: Install packages
         run: |
-          npm install -g babel-cli
-          npm install --package-lock-only
           npm ci
         working-directory: ./src
 
