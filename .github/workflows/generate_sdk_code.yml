@@ -75,7 +75,7 @@ jobs:
       - name: Generate SDK
         run: |
           java --version
-          java -jar ${{ runner.temp }}/openapi-generator-cli.jar generate -i ${{ runner.temp }}/openapispec/openapi.yml -g typescript-rxjs -o ./src -c ${{ runner.temp }}/${{ env.CONFIG_FILE }} --skip-validate-spec
+          java -jar ${{ runner.temp }}/openapi-generator-cli.jar generate -i ${{ runner.temp }}/openapispec/openapi.yml -g typescript-fetch -o ./src -c ${{ runner.temp }}/${{ env.CONFIG_FILE }} --skip-validate-spec
           cp ./src/README.md ./README.md
 
       - name: Create Pull Request
