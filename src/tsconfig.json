@@ -5,11 +5,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
-    "rootDir": ".",
     "lib": [
       "es6",
-      "dom",
-      "es2017"
+      "dom"
     ],
     "typeRoots": [
       "node_modules/@types"

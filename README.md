@@ -1,6 +1,6 @@
 ## databox@2.1.1
 
-This generator creates TypeScript/JavaScript client that utilizes [RxJS](https://rxjs-dev.firebaseapp.com/). The generated Node module can be used in the following environments:
+This generator creates TypeScript/JavaScript client that utilizes [Fetch API](https://fetch.spec.whatwg.org/). The generated Node module can be used in the following environments:
 
 Environment
 * Node.js
@@ -43,45 +43,4 @@ _unPublished (not recommended):_
 
 ```
 npm install PATH_TO_GENERATED_PACKAGE --save
-```
-
-### How to apply middleware
-
-First, add a singleton class that extends the generated `Configuration` class.
-
-```
-export class AuthInterceptor extends Configuration {
-  private static config: AuthInterceptor;
-
-  private constructor() {
-    const middleware: Middleware[] = [
-      {
-        pre(request: RequestArgs): RequestArgs {
-          const token = getAuthToken();
-
-          return {
-            ...request,
-            headers: {
-              ...request.headers,
-              Authorization: `Bearer ${token}`,
-            },
-          };
-        },
-      },
-    ];
-
-    super({ middleware });
-  }
-
-  public static get Instance() {
-    return AuthInterceptor.config || (AuthInterceptor.config = new this());
-  }
-}
-```
-
-Next, pass it to the generated api controller.
-
-```
-const api = new StoreApi(AuthInterceptor.Instance);
-
 ```

@@ -9,12 +9,9 @@
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "scripts" : {
-    "build": "node_modules/.bin/tsc --outDir dist/",
+  "scripts": {
+    "build": "tsc",
     "prepare": "npm run build"
-  },
-  "dependencies": {
-    "rxjs": "^7.2.0"
   },
   "devDependencies": {
     "typescript": "^4.0 || ^5.0"
