@@ -28,6 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: release_draft
     timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
