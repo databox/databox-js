@@ -1,6 +1,5 @@
 ## databox@2.1.1
 
-
 This generator creates TypeScript/JavaScript client that utilizes [Fetch API](https://fetch.spec.whatwg.org/). The generated Node module can be used in the following environments:
 
 Environment
