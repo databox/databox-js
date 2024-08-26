@@ -1,11 +1,11 @@
 {
   "name": "databox",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "OpenAPI client for databox",
   "author": "OpenAPI-Generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/databox/databox-js.git"
+    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
