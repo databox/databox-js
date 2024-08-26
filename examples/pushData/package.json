@@ -1,0 +1,19 @@
+{
+  "name": "push-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "databox": "^2.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
