@@ -1,5 +1,6 @@
 {
   "npmName": "databox",
   "npmVersion": "{VERSION}",
-  "platform": "node"
+  "platform": "node",
+  "npmRepository": "https://github.com/databox/databox-js.git"
 }
