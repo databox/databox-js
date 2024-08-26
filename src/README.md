@@ -1,4 +1,4 @@
-## databox@2.1.1
+## Databox
 
 This package is designed to consume the Databox Push API functionality via TypeScript/JavaScript client that utilizes [Fetch API](https://fetch.spec.whatwg.org/). The package is compatible with the following environments:
 
