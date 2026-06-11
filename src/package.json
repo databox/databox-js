@@ -1,6 +1,7 @@
 {
   "name": "databox",
   "version": "2.1.2",
+    "license": "MIT",
   "description": "OpenAPI client for databox",
   "author": "OpenAPI-Generator",
   "repository": {
